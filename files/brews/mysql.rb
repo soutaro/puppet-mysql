@@ -2,7 +2,7 @@ require 'formula'
 
 class Mysql < Formula
   homepage 'http://dev.mysql.com/doc/refman/5.6/en/'
-  url 'http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.10.tar.gz/from/http://cdn.mysql.com/'
+  url 'http://sourceforge.jp/frs/g_redir.php?m=jaist&f=%2Fmysql.mirror%2FMySQL+5.6.10%2Fmysql-5.6.10.tar.gz'
   version '5.6.10-boxen3'
   sha1 'f37979eafc241a0ebeac9548cb3f4113074271b7'
 
