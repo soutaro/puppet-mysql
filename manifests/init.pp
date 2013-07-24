@@ -42,7 +42,7 @@ class mysql {
   }
 
   package { 'boxen/brews/mysql':
-    ensure => '5.5.20-boxen2',
+    ensure => '5.6.10-boxen3',
     notify => Service['dev.mysql']
   }
 
@@ -56,7 +56,7 @@ class mysql {
   exec { 'init-mysql-db':
     command  => "mysql_install_db \
       --verbose \
-      --basedir=${boxen::config::homebrewdir} \
+      --basedir=/opt/boxen/homebrew/Cellar/mysql/5.6.10-boxen3 \
       --datadir=${mysql::config::datadir} \
       --tmpdir=/tmp",
     creates  => "${mysql::config::datadir}/mysql",
