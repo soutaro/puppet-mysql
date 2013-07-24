@@ -8,3 +8,6 @@ log-error=<%= scope.lookupvar "mysql::config::logerror" %>
 port=<%= scope.lookupvar "mysql::config::port" %>
 socket=<%= scope.lookupvar "mysql::config::socket" %>
 max_allowed_packet=1073741824
+innodb_buffer_pool_size=2G
+innodb_log_file_size=500M
+innodb_flush_log_at_trx_commit=0
