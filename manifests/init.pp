@@ -94,7 +94,7 @@ class mysql {
 
   exec { 'mysql-tzinfo-to-sql':
     command     => "mysql_tzinfo_to_sql /usr/share/zoneinfo | \
-      mysql -u root mysql -P ${mysql::config::port} -S ${mysql::config::socket}",
+      mysql -u root mysql -P ${mysql::config::port} -S ${mysql::config::socket} -f",
     provider    => shell,
     creates     => "${mysql::config::datadir}/.tz_info_created",
     subscribe   => Exec['wait-for-mysql'],
