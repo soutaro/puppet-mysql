@@ -55,7 +55,6 @@ class Mysql < Formula
       -DCMAKE_FIND_FRAMEWORK=LAST
       -DCMAKE_VERBOSE_MAKEFILE=ON
       -DMYSQL_DATADIR=#{var}/mysql
-      -DINSTALL_INCLUDEDIR=#{include}/mysql
       -DINSTALL_MANDIR=#{man}
       -DINSTALL_DOCDIR=#{doc}
       -DINSTALL_INFODIR=#{info}
